@@ -9,13 +9,13 @@ import './App.scss';
 function App() {
   return (
     <BrowserRouter basename='/PortfolioAyush'>
-      <Routes>
-        <Route exact path="/PortfolioAyush" element={<Layout />}>
+      <Routes  exact path="/PortfolioAyush" element={<Layout />}>
+        {/* <Route exact path="/PortfolioAyush" element={<Layout />}> */}
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
-        </Route>
+        {/* </Route> */}
       </Routes>
     </BrowserRouter>
 
