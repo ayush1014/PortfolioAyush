@@ -1,0 +1,41 @@
+@keyframes scaleAndFadeIn {
+  0% {
+    transform: scale(0) rotateZ(0deg);
+    opacity: 0;
+  }
+  75% {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2) rotateZ(0deg);
+    opacity: 1;
+  }
+}
+
+.logo-container {
+  z-index: 0;
+  width: 600px;
+  height: 709px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 10%;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+
+  .solid-logo {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    opacity: 0; // Start with the logo invisible
+    transform: rotateZ(0deg) !important;
+    z-index: 100;
+    animation: scaleAndFadeIn 5s ease-in-out forwards; // Apply the animation
+  }
+}
