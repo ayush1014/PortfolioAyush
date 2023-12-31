@@ -2,7 +2,7 @@
   "homepage": "https://ayush1014.github.io/PortfolioAyush",
   "name": "react-portfolio-website",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
