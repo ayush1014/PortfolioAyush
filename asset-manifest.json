@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/PortfolioAyush/static/css/main.d3ffe8ea.css",
-    "main.js": "/PortfolioAyush/static/js/main.3dc09576.js",
-    "static/js/787.5a42e17b.chunk.js": "/PortfolioAyush/static/js/787.5a42e17b.chunk.js",
+    "main.css": "/PortfolioAyush/static/css/main.1b085c33.css",
+    "main.js": "/PortfolioAyush/static/js/main.3d996df7.js",
     "static/media/resume.pdf": "/PortfolioAyush/static/media/resume.020d3dea8bef77a0a99f.pdf",
     "static/media/name.png": "/PortfolioAyush/static/media/name.38728ff254c4a4a0513b.png",
     "static/media/AK.png": "/PortfolioAyush/static/media/AK.ca5c4ec05ca8c502b119.png",
@@ -13,12 +12,11 @@
     "static/media/CoolveticaRg-Regular.woff": "/PortfolioAyush/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
     "static/media/CoolveticaRg-Regular.woff2": "/PortfolioAyush/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/PortfolioAyush/index.html",
-    "main.d3ffe8ea.css.map": "/PortfolioAyush/static/css/main.d3ffe8ea.css.map",
-    "main.3dc09576.js.map": "/PortfolioAyush/static/js/main.3dc09576.js.map",
-    "787.5a42e17b.chunk.js.map": "/PortfolioAyush/static/js/787.5a42e17b.chunk.js.map"
+    "main.1b085c33.css.map": "/PortfolioAyush/static/css/main.1b085c33.css.map",
+    "main.3d996df7.js.map": "/PortfolioAyush/static/js/main.3d996df7.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3ffe8ea.css",
-    "static/js/main.3dc09576.js"
+    "static/css/main.1b085c33.css",
+    "static/js/main.3d996df7.js"
   ]
 }
