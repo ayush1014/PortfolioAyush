@@ -1,4 +1,4 @@
-import { BrowserRouter, HashRouter, Switch, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -8,20 +8,16 @@ import './App.scss';
 
 function App() {
   return (
-    <BrowserRouter>
-      <HashRouter basename="/">
-      <Switch>
+    <HashRouter basename="/">
       <Routes>
-        <Route exact path="/" element={<Layout />}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="about" element={<About />} />
+          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
-      </Switch>
-      </HashRouter>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
