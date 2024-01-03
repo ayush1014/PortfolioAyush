@@ -16,11 +16,13 @@ const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
-    return setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
-
+    const timer = setTimeout(() => {
+      setLetterClass('text-animate-hover');
+    }, 3000);
+  
+    // Cleanup function to clear the timeout
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
       <div className="container about-page">
