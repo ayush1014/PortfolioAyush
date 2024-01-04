@@ -15,6 +15,9 @@
     margin: 0;
     font-family: 'Coolvetica';
     font-weight: 400;
+    @media (max-width: 768px) { // Adjust this value based on your design
+      font-size: 48px;
+    }
 
     // &:before {
     //   content: '<h1>';
