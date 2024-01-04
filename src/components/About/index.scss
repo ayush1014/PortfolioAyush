@@ -1,3 +1,14 @@
+// .stage-cube-cont {
+//   width: 50%;
+//   height: 100%;
+//   top: 0;
+//   padding-top: 18%;
+//   margin-left: 0;
+//   position: absolute;
+//   right: 0;
+//   overflow: hidden;
+// }
+
 .stage-cube-cont {
   width: 50%;
   height: 100%;
@@ -6,7 +17,14 @@
   margin-left: 0;
   position: absolute;
   right: 0;
-  overflow: hidden;
+  // overflow: hidden;
+
+  @media (max-width: 768px) { // Adjust this value based on your design
+    position: static; // Change to static positioning for mobile
+    width: 100%; // Adjust width for mobile
+    padding-top: 5%; // Adjust padding for mobile
+    margin-top: 20px; 
+  }
 }
 
 .cubespinner {
@@ -17,6 +35,12 @@
   transform-style: preserve-3d;
   transform-origin: 100px 100px 0;
   margin-left: calc(50% - 100px);
+
+    @media (max-width: 768px) {
+    margin-left: 12; // Center the cube on mobile
+    margin-right: auto;
+    transform-origin: 25px 25px 35; 
+  }
 
   div {
     position: absolute;
