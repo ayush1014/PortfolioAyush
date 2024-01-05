@@ -19,6 +19,14 @@
   right: 0;
   // overflow: hidden;
 
+  @media screen and (max-width: 1200px){
+    height: 0;
+    overflow: visible;
+    display: contents;
+    position: static;
+    width: 100%;
+}
+
   @media (max-width: 768px) { // Adjust this value based on your design
     position: static; // Change to static positioning for mobile
     width: 100%; // Adjust width for mobile
