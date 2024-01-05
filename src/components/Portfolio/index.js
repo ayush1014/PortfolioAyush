@@ -7,43 +7,43 @@ import Work from "./Portfolio_Component";
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const [showJourney, setShowJourney] = useState(false);
-  const portfolioData = [
-    {
-      id: 1,
-      title: "Project 1",
-      description: "Description for Project 1",
-      imageUrl: "path/to/image1.jpg",
-      projectUrl: "http://link-to-project1.com"
-    },
-    {
-      id: 2,
-      title: "Project 2",
-      description: "Description for Project 2",
-      imageUrl: "path/to/image1.jpg",
-      projectUrl: "http://link-to-project1.com"
-    },
-    {
-      id: 3,
-      title: "Project 3",
-      description: "Description for Project 3",
-      imageUrl: "path/to/image1.jpg",
-      projectUrl: "http://link-to-project1.com"
-    },
-    {
-      id: 4,
-      title: "Project 4",
-      description: "Description for Project 3",
-      imageUrl: "path/to/image1.jpg",
-      projectUrl: "http://link-to-project1.com"
-    },
-    {
-      id: 5,
-      title: "Project 5",
-      description: "Description for Project 3",
-      imageUrl: "path/to/image1.jpg",
-      projectUrl: "http://link-to-project1.com"
-    },
-  ];
+  // const portfolioData = [
+  //   {
+  //     id: 1,
+  //     title: "Project 1",
+  //     description: "Description for Project 1",
+  //     imageUrl: "path/to/image1.jpg",
+  //     projectUrl: "http://link-to-project1.com"
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Project 2",
+  //     description: "Description for Project 2",
+  //     imageUrl: "path/to/image1.jpg",
+  //     projectUrl: "http://link-to-project1.com"
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Project 3",
+  //     description: "Description for Project 3",
+  //     imageUrl: "path/to/image1.jpg",
+  //     projectUrl: "http://link-to-project1.com"
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Project 4",
+  //     description: "Description for Project 3",
+  //     imageUrl: "path/to/image1.jpg",
+  //     projectUrl: "http://link-to-project1.com"
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "Project 5",
+  //     description: "Description for Project 3",
+  //     imageUrl: "path/to/image1.jpg",
+  //     projectUrl: "http://link-to-project1.com"
+  //   },
+  // ];
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -74,13 +74,13 @@ const Portfolio = () => {
         </h1>
         {!showJourney && (
           <>
-            <div className="work-btn-component">
+            {/* <div className="work-btn-component">
               <button className="work-btn" onClick={handleJourneyClick}>Show Work</button>
-            </div>
+            </div> */}
             <Work></Work>
           </>
         )}
-        {showJourney && (
+        {/* {showJourney && (
           <>
             <div className="grid">
               {portfolioData.map((project) => (
@@ -96,7 +96,7 @@ const Portfolio = () => {
             </div>
             <button className="back-btn" onClick={handleJourneyClose}>Back</button>
           </>
-        )}
+        )} */}
 
       </div>
       <Loader type="pacman" />

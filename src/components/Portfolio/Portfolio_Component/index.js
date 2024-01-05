@@ -2,18 +2,25 @@ import { useState } from "react";
 import React from "react";
 import resume from "../../../assets/docs/resume.pdf"
 import './index.scss'
+import gameImg from "../../../assets/images/game.jpeg"
+import qrCode from "../../../assets/images/qrcode.jpeg"
+import todo from "../../../assets/images/todo.jpeg"
+import watch from "../../../assets/images/watch.jpeg"
+import simpleInterest from "../../../assets/images/simpleInterest.jpeg"
 
 const Work = () => {
     const [skills, setSkills] = useState(false)
     const [experience, setExperience] = useState(false)
     const [projects, setProjects] = useState(false)
     const [achievement, setAchievement] = useState(false)
+    const [work, setWork] = useState(false)
     const [showResume, setShowResume] = useState(true);
 
     const handleSkills = () => {
         setSkills(true);
         setExperience(false);
         setProjects(false);
+        setWork(false);
         setAchievement(false);
         setShowResume(false);
     };
@@ -22,6 +29,7 @@ const Work = () => {
         setSkills(false);
         setExperience(true);
         setProjects(false);
+        setWork(false);
         setAchievement(false);
         setShowResume(false);
     };
@@ -30,14 +38,63 @@ const Work = () => {
         setSkills(false);
         setExperience(false);
         setProjects(true);
+        setWork(false);
         setAchievement(false);
         setShowResume(false);
     };
+
+    const handleWork = () => {
+        setSkills(false);
+        setExperience(false);
+        setProjects(false);
+        setAchievement(false);
+        setWork(true)
+        setShowResume(false);
+    };
+
+    const portfolioData = [
+        {
+            id: 1,
+            title: "Project 1",
+            description: "Description for Project 1",
+            imageUrl: todo,
+            projectUrl: "https://ayush1014.github.io/TodoList/"
+        },
+        {
+            id: 2,
+            title: "Project 2",
+            description: "Description for Project 2",
+            imageUrl: qrCode,
+            projectUrl: "https://qr-code-maker.onrender.com/"
+        },
+        {
+            id: 3,
+            title: "Project 3",
+            description: "Description for Project 3",
+            imageUrl: watch,
+            projectUrl: "https://ayush1014.github.io/Stopwatch-using-react/"
+        },
+        {
+            id: 4,
+            title: "Project 4",
+            description: "Description for Project 3",
+            imageUrl: gameImg,
+            projectUrl: "https://44351-w22.github.io/creative-game-quad-nations-studio-1/"
+        },
+        {
+            id: 5,
+            title: "Project 5",
+            description: "Description for Project 3",
+            imageUrl: simpleInterest,
+            projectUrl: "https://ayush1014.github.io/Simple-Interest-Calculator/"
+        },
+    ];
 
     const handleAchievement = () => {
         setSkills(false);
         setExperience(false);
         setProjects(false);
+        setWork(false);
         setAchievement(true);
         setShowResume(false);
     };
@@ -47,6 +104,7 @@ const Work = () => {
         setExperience(false);
         setProjects(false);
         setAchievement(false);
+        setWork(false);
         setShowResume(true);
     }
 
@@ -167,6 +225,9 @@ const Work = () => {
                     <button className="back-btn" onClick={handleBack}>Clear</button>
                 </div>}
                 {projects && <div className="projects-container">
+                    <div className="top-btn">
+                    <button className={`work-btn ${work ? 'active-btn' : ''}`} onClick={handleWork}>See My Work</button>
+                    </div>
                     <div className="projects-desc">
                         <ol>
                             <li>
@@ -222,6 +283,24 @@ const Work = () => {
                     </div>
                     <button className="back-btn" onClick={handleBack}>Clear</button>
                 </div>}
+
+                <div>
+                    {work && <div className="work-container">
+                        <div className="grid">
+                            {portfolioData.map((project) => (
+                                <div className="grid-item" key={project.id}>
+                                    <img src={project.imageUrl} alt={project.title} />
+                                    <div className="overlay">
+                                        <div className="project-description">{project.description}</div>
+                                        <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="btn">View Project</a>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                        <button className="back-btn" onClick={handleBack}>Clear</button>
+                    </div>}
+                </div>
+
                 {achievement && <div className="achievement-container">
                     <h1 style={{ padding: "0", margin: "0" }}>Achievements</h1>
                     <ol>
