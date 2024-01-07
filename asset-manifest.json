@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/PortfolioAyush/static/css/main.1ef6c0a6.css",
-    "main.js": "/PortfolioAyush/static/js/main.8ec704b5.js",
+    "main.css": "/PortfolioAyush/static/css/main.304abacf.css",
+    "main.js": "/PortfolioAyush/static/js/main.44e1978d.js",
+    "static/media/data.jpeg": "/PortfolioAyush/static/media/data.36db8b65931bc2b4f442.jpeg",
     "static/media/game.jpeg": "/PortfolioAyush/static/media/game.7b41a2295b231433eaab.jpeg",
     "static/media/qrcode.jpeg": "/PortfolioAyush/static/media/qrcode.cfa26313151a729ec0b8.jpeg",
     "static/media/watch.jpeg": "/PortfolioAyush/static/media/watch.bea66937b604f1bb2f65.jpeg",
     "static/media/simpleInterest.jpeg": "/PortfolioAyush/static/media/simpleInterest.d2c7ac8fe85352d4ad40.jpeg",
     "static/media/todo.jpeg": "/PortfolioAyush/static/media/todo.27ff3aa4fd73bc0e94f0.jpeg",
-    "static/media/resume.pdf": "/PortfolioAyush/static/media/resume.020d3dea8bef77a0a99f.pdf",
+    "static/media/Ayush__Resume.pdf": "/PortfolioAyush/static/media/Ayush__Resume.c5c4ef19668bb6ad62de.pdf",
     "static/media/name.png": "/PortfolioAyush/static/media/name.38728ff254c4a4a0513b.png",
     "static/media/AK.png": "/PortfolioAyush/static/media/AK.ca5c4ec05ca8c502b119.png",
     "static/media/A.png": "/PortfolioAyush/static/media/A.be7c8f340d977413d59c.png",
@@ -17,11 +18,11 @@
     "static/media/CoolveticaRg-Regular.woff": "/PortfolioAyush/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
     "static/media/CoolveticaRg-Regular.woff2": "/PortfolioAyush/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/PortfolioAyush/index.html",
-    "main.1ef6c0a6.css.map": "/PortfolioAyush/static/css/main.1ef6c0a6.css.map",
-    "main.8ec704b5.js.map": "/PortfolioAyush/static/js/main.8ec704b5.js.map"
+    "main.304abacf.css.map": "/PortfolioAyush/static/css/main.304abacf.css.map",
+    "main.44e1978d.js.map": "/PortfolioAyush/static/js/main.44e1978d.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ef6c0a6.css",
-    "static/js/main.8ec704b5.js"
+    "static/css/main.304abacf.css",
+    "static/js/main.44e1978d.js"
   ]
 }
