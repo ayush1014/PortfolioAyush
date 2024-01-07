@@ -1,12 +1,13 @@
 import { useState } from "react";
 import React from "react";
-import resume from "../../../assets/docs/resume.pdf"
+import resume from "../../../assets/docs/Ayush__Resume.pdf"
 import './index.scss'
 import gameImg from "../../../assets/images/game.jpeg"
 import qrCode from "../../../assets/images/qrcode.jpeg"
 import todo from "../../../assets/images/todo.jpeg"
 import watch from "../../../assets/images/watch.jpeg"
 import simpleInterest from "../../../assets/images/simpleInterest.jpeg"
+import data from "../../../assets/images/data.jpeg"
 
 const Work = () => {
     const [skills, setSkills] = useState(false)
@@ -15,6 +16,7 @@ const Work = () => {
     const [achievement, setAchievement] = useState(false)
     const [work, setWork] = useState(false)
     const [showResume, setShowResume] = useState(true);
+    const [hover, setHover] = useState(false)
 
     const handleSkills = () => {
         setSkills(true);
@@ -55,38 +57,45 @@ const Work = () => {
     const portfolioData = [
         {
             id: 1,
-            title: "Project 1",
-            description: "Description for Project 1",
+            title: "Todo List",
+            description: "Built todo list web application by using React.js and Particle.js",
             imageUrl: todo,
             projectUrl: "https://ayush1014.github.io/TodoList/"
         },
         {
             id: 2,
-            title: "Project 2",
-            description: "Description for Project 2",
+            title: "Qr-code-maker",
+            description: "Developed customizable QR Code generator using Flask python framework",
             imageUrl: qrCode,
             projectUrl: "https://qr-code-maker.onrender.com/"
         },
         {
             id: 3,
-            title: "Project 3",
-            description: "Description for Project 3",
+            title: "Stopwatch",
+            description: "Built stopwatch using React.Js",
             imageUrl: watch,
             projectUrl: "https://ayush1014.github.io/Stopwatch-using-react/"
         },
         {
             id: 4,
-            title: "Project 4",
-            description: "Description for Project 3",
+            title: "RPG Game",
+            description: "Developed RPG game using Godot Engine, built by GDScript, C# and C++",
             imageUrl: gameImg,
             projectUrl: "https://44351-w22.github.io/creative-game-quad-nations-studio-1/"
         },
         {
             id: 5,
-            title: "Project 5",
-            description: "Description for Project 3",
+            title: "Simple Interest Calculator",
+            description: "Simple interest calculator built by using Html, Css and JS for calculating simple interest by years",
             imageUrl: simpleInterest,
             projectUrl: "https://ayush1014.github.io/Simple-Interest-Calculator/"
+        },
+        {
+            id: 6,
+            title: "HR Data Analysis Dashboard",
+            description: "Analyzed HR Data by designing dynamic HR Dashboard in Tableau Desktop also created streamline data pipeline for better optimization",
+            imageUrl: data,
+            projectUrl: "https://public.tableau.com/app/profile/ayush.kanaujia/viz/HR_Analysis_17046017914930/HRANALYSTICSDASHBOARD"
         },
     ];
 
@@ -225,8 +234,16 @@ const Work = () => {
                     <button className="back-btn" onClick={handleBack}>Clear</button>
                 </div>}
                 {projects && <div className="projects-container">
-                    <div className="top-btn">
-                    <button className={`work-btn ${work ? 'active-btn' : ''}`} onClick={handleWork}>See My Work</button>
+                    <div className="top-btn" style={{ width: '200vw' }}>
+                        <button
+                            className={`work-btn ${work ? 'active-btn' : ''}`}
+                            onClick={handleWork}
+                            style={{ color: hover ? "white" : "rgb(252,21,37)" }}
+                            onMouseEnter={() => setHover(true)}
+                            onMouseLeave={() => setHover(false)}
+                        >
+                            See My Work
+                        </button>
                     </div>
                     <div className="projects-desc">
                         <ol>
@@ -291,7 +308,7 @@ const Work = () => {
                                 <div className="grid-item" key={project.id}>
                                     <img src={project.imageUrl} alt={project.title} />
                                     <div className="overlay">
-                                        <div className="project-description">{project.description}</div>
+                                        <div className="project-description" style={{fontSize:"200%", fontWeight:'600'}}>{project.description}</div>
                                         <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="btn">View Project</a>
                                     </div>
                                 </div>
