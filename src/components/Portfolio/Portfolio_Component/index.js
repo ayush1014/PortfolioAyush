@@ -67,7 +67,7 @@ const Work = () => {
             title: "Qr-code-maker",
             description: "Developed customizable QR Code generator using Flask python framework",
             imageUrl: qrCode,
-            projectUrl: "https://qr-code-maker.onrender.com/"
+            projectUrl: "https://ayushkanaujia.pythonanywhere.com/"
         },
         {
             id: 3,
