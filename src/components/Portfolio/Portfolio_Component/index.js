@@ -117,6 +117,15 @@ const Work = () => {
         setShowResume(true);
     }
 
+    const handleWorkBack = ()=>{
+        setSkills(false);
+        setExperience(false);
+        setProjects(true);
+        setAchievement(false);
+        setWork(false)
+        setShowResume(false);
+    }
+
     return (
         <div>
             <div className="top-btn">
@@ -233,19 +242,19 @@ const Work = () => {
                     </ol>
                     <button className="back-btn" onClick={handleBack}>Clear</button>
                 </div>}
-                {projects && <div className="projects-container">
-                    <div className="top-btn" style={{ width: '200vw' }}>
-                        <button
-                            className={`work-btn ${work ? 'active-btn' : ''}`}
-                            onClick={handleWork}
-                            style={{ color: hover ? "white" : "rgb(252,21,37)" }}
-                            onMouseEnter={() => setHover(true)}
-                            onMouseLeave={() => setHover(false)}
-                        >
-                            See My Work
-                        </button>
-                    </div>
+                {work && <div className="projects-container">
                     <div className="projects-desc">
+                    <div className="top-btn" style={{ width: '200vw' }}>
+                            <button
+                                className={`work-btn ${work ? 'active-btn' : ''}`}
+                                onClick={handleWorkBack}
+                                style={{ color: hover ? "white" : "rgb(252,21,37)" }}
+                                onMouseEnter={() => setHover(true)}
+                                onMouseLeave={() => setHover(false)}
+                            >
+                                Back to projects
+                            </button>
+                        </div>
                         <ol>
                             <li>
                                 <span>
@@ -295,20 +304,31 @@ const Work = () => {
                             </li>
                         </ol>
                         <p style={{ color: "rgb(252,21,37)", animation: "bounce 5s" }}>
-                            Please see more projects and use it by click on show work button on the top
+                            Please see more projects and use it by click on 'Back to projects' on the top
                         </p>
                     </div>
                     <button className="back-btn" onClick={handleBack}>Clear</button>
                 </div>}
 
                 <div>
-                    {work && <div className="work-container">
+                    {projects && <div className="work-container">
+                        <div className="top-btn" style={{ width: '200vw' }}>
+                            <button
+                                className={`work-btn ${work ? 'active-btn' : ''}`}
+                                onClick={handleWork}
+                                style={{ color: hover ? "white" : "rgb(252,21,37)" }}
+                                onMouseEnter={() => setHover(true)}
+                                onMouseLeave={() => setHover(false)}
+                            >
+                                More Work Details
+                            </button>
+                        </div>
                         <div className="grid">
                             {portfolioData.map((project) => (
                                 <div className="grid-item" key={project.id}>
                                     <img src={project.imageUrl} alt={project.title} />
                                     <div className="overlay">
-                                        <div className="project-description" style={{fontSize:"200%", fontWeight:'600'}}>{project.description}</div>
+                                        <div className="project-description" style={{ fontSize: "200%", fontWeight: '600' }}>{project.description}</div>
                                         <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="btn">View Project</a>
                                     </div>
                                 </div>
