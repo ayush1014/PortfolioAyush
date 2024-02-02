@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/PortfolioAyush/static/css/main.304abacf.css",
-    "main.js": "/PortfolioAyush/static/js/main.6a3a3273.js",
+    "main.js": "/PortfolioAyush/static/js/main.9b484194.js",
     "static/media/data.jpeg": "/PortfolioAyush/static/media/data.36db8b65931bc2b4f442.jpeg",
     "static/media/game.jpeg": "/PortfolioAyush/static/media/game.7b41a2295b231433eaab.jpeg",
     "static/media/qrcode.jpeg": "/PortfolioAyush/static/media/qrcode.cfa26313151a729ec0b8.jpeg",
     "static/media/watch.jpeg": "/PortfolioAyush/static/media/watch.bea66937b604f1bb2f65.jpeg",
     "static/media/simpleInterest.jpeg": "/PortfolioAyush/static/media/simpleInterest.d2c7ac8fe85352d4ad40.jpeg",
     "static/media/todo.jpeg": "/PortfolioAyush/static/media/todo.27ff3aa4fd73bc0e94f0.jpeg",
-    "static/media/Ayush__Resume.pdf": "/PortfolioAyush/static/media/Ayush__Resume.787df37e27da82b74234.pdf",
+    "static/media/ResumeAyush.pdf": "/PortfolioAyush/static/media/ResumeAyush.646b8caf9a78da459d9e.pdf",
     "static/media/name.png": "/PortfolioAyush/static/media/name.38728ff254c4a4a0513b.png",
     "static/media/AK.png": "/PortfolioAyush/static/media/AK.ca5c4ec05ca8c502b119.png",
     "static/media/A.png": "/PortfolioAyush/static/media/A.be7c8f340d977413d59c.png",
@@ -19,10 +19,10 @@
     "static/media/CoolveticaRg-Regular.woff2": "/PortfolioAyush/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/PortfolioAyush/index.html",
     "main.304abacf.css.map": "/PortfolioAyush/static/css/main.304abacf.css.map",
-    "main.6a3a3273.js.map": "/PortfolioAyush/static/js/main.6a3a3273.js.map"
+    "main.9b484194.js.map": "/PortfolioAyush/static/js/main.9b484194.js.map"
   },
   "entrypoints": [
     "static/css/main.304abacf.css",
-    "static/js/main.6a3a3273.js"
+    "static/js/main.9b484194.js"
   ]
 }
