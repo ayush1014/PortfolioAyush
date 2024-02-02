@@ -1,6 +1,6 @@
 import { useState } from "react";
 import React from "react";
-import resume from "../../../assets/docs/Ayush__Resume.pdf"
+import resume from "../../../assets/docs/ResumeAyush.pdf"
 import './index.scss'
 import gameImg from "../../../assets/images/game.jpeg"
 import qrCode from "../../../assets/images/qrcode.jpeg"
