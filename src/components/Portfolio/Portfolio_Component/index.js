@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from "react";
-import resume from "../../../assets/docs/ResumeAyush.pdf"
+// import resume from "../../../assets/docs/ResumeAyush.pdf"
+import resumeAyush from "../../../assets/docs/AyushResume.pdf"
 import './index.scss'
 import gameImg from "../../../assets/images/game.jpeg"
 import qrCode from "../../../assets/images/qrcode.jpeg"
@@ -8,6 +9,7 @@ import todo from "../../../assets/images/todo.jpeg"
 import watch from "../../../assets/images/watch.jpeg"
 import simpleInterest from "../../../assets/images/simpleInterest.jpeg"
 import data from "../../../assets/images/data.jpeg"
+import jobPeer from "../../../assets/images/job-peer.png"
 
 const Work = () => {
     const [skills, setSkills] = useState(false)
@@ -57,41 +59,48 @@ const Work = () => {
     const portfolioData = [
         {
             id: 1,
+            title: "Job-Peer.com",
+            description: "Developed Job-Peer.com as an application tracker which helped students and professionals to save there job applications and track them for later success in job appling experience with touch of social media where user can follow there peer to check there numbers of applications they applied in different timeframes. Tech Stack: Node.JS, Express.Js, React.JS, JWT, Password hasing, MySQL, Node Corns, Firebase authentication. Check it out.",
+            imageUrl: jobPeer,
+            projectUrl: "https://www.job-peer.com/"
+        },
+        {
+            id: 2,
             title: "Todo List",
             description: "Built todo list web application by using React.js and Particle.js",
             imageUrl: todo,
             projectUrl: "https://ayush1014.github.io/TodoList/"
         },
         {
-            id: 2,
+            id: 3,
             title: "Qr-code-maker",
             description: "Developed customizable QR Code generator using Flask python framework",
             imageUrl: qrCode,
             projectUrl: "https://ayushkanaujia.pythonanywhere.com/"
         },
         {
-            id: 3,
+            id: 4,
             title: "Stopwatch",
             description: "Built stopwatch using React.Js",
             imageUrl: watch,
             projectUrl: "https://ayush1014.github.io/Stopwatch-using-react/"
         },
         {
-            id: 4,
+            id: 5,
             title: "RPG Game",
             description: "Developed RPG game using Godot Engine, built by GDScript, C# and C++",
             imageUrl: gameImg,
             projectUrl: "https://44351-w22.github.io/creative-game-quad-nations-studio-1/"
         },
         {
-            id: 5,
+            id: 6,
             title: "Simple Interest Calculator",
             description: "Simple interest calculator built by using Html, Css and JS for calculating simple interest by years",
             imageUrl: simpleInterest,
             projectUrl: "https://ayush1014.github.io/Simple-Interest-Calculator/"
         },
         {
-            id: 6,
+            id: 7,
             title: "HR Data Analysis Dashboard",
             description: "Analyzed HR Data by designing dynamic HR Dashboard in Tableau Desktop also created streamline data pipeline for better optimization",
             imageUrl: data,
@@ -137,9 +146,9 @@ const Work = () => {
             {showResume && (
                 <div className="resume">
                     <h3>My Professional Resume</h3>
-                    <a href={resume} download="Resume.pdf" className="download-btn">Download Resume</a>
+                    <a href={resumeAyush} download="Resume.pdf" className="download-btn">Download Resume</a>
                     <p>Scroll inside to view more</p>
-                    <iframe src={`${resume}#toolbar=0&#view=Fit`} width="20%" height="100%" />
+                    <iframe src={`${resumeAyush}#toolbar=0&#view=Fit`} width="20%" height="100%" />
                 </div>
             )}
             <div>
@@ -328,7 +337,7 @@ const Work = () => {
                                 <div className="grid-item" key={project.id}>
                                     <img src={project.imageUrl} alt={project.title} />
                                     <div className="overlay">
-                                        <div className="project-description" style={{ fontSize: "200%", fontWeight: '600' }}>{project.description}</div>
+                                        <div className="project-description" style={{ fontSize: "120%", fontWeight: '600' }}>{project.description}</div>
                                         <a href={project.projectUrl} target="_blank" rel="noopener noreferrer" className="btn">View Project</a>
                                     </div>
                                 </div>
