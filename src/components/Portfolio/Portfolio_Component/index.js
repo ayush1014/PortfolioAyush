@@ -1,7 +1,9 @@
 import { useState } from "react";
 import React from "react";
 // import resume from "../../../assets/docs/ResumeAyush.pdf"
-import resumeAyush from "../../../assets/docs/AyushResume.pdf"
+import resume from "../../../assets/docs/AyushResume.pdf";
+import ResumeAyushKanaujia from "../../../assets/docs/ResumeAyushKanaujia.pdf"
+
 import './index.scss'
 import gameImg from "../../../assets/images/game.jpeg"
 import qrCode from "../../../assets/images/qrcode.jpeg"
@@ -146,9 +148,9 @@ const Work = () => {
             {showResume && (
                 <div className="resume">
                     <h3>My Professional Resume</h3>
-                    <a href={resumeAyush} download="Resume.pdf" className="download-btn">Download Resume</a>
+                    <a href={ResumeAyushKanaujia} download="Resume.pdf" className="download-btn">Download Resume</a>
                     <p>Scroll inside to view more</p>
-                    <iframe src={`${resumeAyush}#toolbar=0&#view=Fit`} width="20%" height="100%" />
+                    <iframe src={`${ResumeAyushKanaujia}#toolbar=0&#view=Fit`} width="20%" height="100%" />
                 </div>
             )}
             <div>
