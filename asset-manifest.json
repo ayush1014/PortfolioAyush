@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PortfolioAyush/static/css/main.304abacf.css",
-    "main.js": "/PortfolioAyush/static/js/main.6c071bc5.js",
+    "main.js": "/PortfolioAyush/static/js/main.c7a57e3b.js",
     "static/media/data.jpeg": "/PortfolioAyush/static/media/data.36db8b65931bc2b4f442.jpeg",
     "static/media/game.jpeg": "/PortfolioAyush/static/media/game.7b41a2295b231433eaab.jpeg",
     "static/media/qrcode.jpeg": "/PortfolioAyush/static/media/qrcode.cfa26313151a729ec0b8.jpeg",
@@ -9,8 +9,7 @@
     "static/media/watch.jpeg": "/PortfolioAyush/static/media/watch.bea66937b604f1bb2f65.jpeg",
     "static/media/simpleInterest.jpeg": "/PortfolioAyush/static/media/simpleInterest.d2c7ac8fe85352d4ad40.jpeg",
     "static/media/todo.jpeg": "/PortfolioAyush/static/media/todo.27ff3aa4fd73bc0e94f0.jpeg",
-    "static/media/ResumeAyushKanaujia.pdf": "/PortfolioAyush/static/media/ResumeAyushKanaujia.cd5f914d3f46b902d38a.pdf",
-    "static/media/AyushResume.pdf": "/PortfolioAyush/static/media/AyushResume.c4253ee27dc6896fe527.pdf",
+    "static/media/Resume_Ayush_Kanaujia.pdf": "/PortfolioAyush/static/media/Resume_Ayush_Kanaujia.ce018ee2dd311c9becb2.pdf",
     "static/media/name.png": "/PortfolioAyush/static/media/name.38728ff254c4a4a0513b.png",
     "static/media/AK.png": "/PortfolioAyush/static/media/AK.ca5c4ec05ca8c502b119.png",
     "static/media/A.png": "/PortfolioAyush/static/media/A.be7c8f340d977413d59c.png",
@@ -21,10 +20,10 @@
     "static/media/CoolveticaRg-Regular.woff2": "/PortfolioAyush/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/PortfolioAyush/index.html",
     "main.304abacf.css.map": "/PortfolioAyush/static/css/main.304abacf.css.map",
-    "main.6c071bc5.js.map": "/PortfolioAyush/static/js/main.6c071bc5.js.map"
+    "main.c7a57e3b.js.map": "/PortfolioAyush/static/js/main.c7a57e3b.js.map"
   },
   "entrypoints": [
     "static/css/main.304abacf.css",
-    "static/js/main.6c071bc5.js"
+    "static/js/main.c7a57e3b.js"
   ]
 }
