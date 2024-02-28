@@ -127,7 +127,7 @@ const Work = () => {
         setShowResume(true);
     }
 
-    const handleWorkBack = ()=>{
+    const handleWorkBack = () => {
         setSkills(false);
         setExperience(false);
         setProjects(true);
@@ -183,27 +183,70 @@ const Work = () => {
                 {experience && <div className="experience-container">
                     <ol>
                         <li>
-                            <span>Software Developer</span> <br /><span className="dates-span">Aug 2021 -- May 2023</span><br /><span className="company-span">Northwest Missouri State University Maryville, Missouri</span>
+                            <span>Co-Founder & Full-Stack Developer</span> <br /><span className="dates-span">Oct 2023 –- Present</span><br /><span className="company-span">Job-Peer</span>
                             <ul>
                                 <li>
-                                    Led the transformative integration of sophisticated data-driven solutions and advanced predictive analytics into the core of the event tracking infrastructure. This strategic initiative significantly optimized operational efficiency and fortified system reliability, leveraging cutting-edge analytical tools and methodologies.
+                                    Architected and deployed Job-Peer.com using React, Node, Express, and MySQL, drawing 300+ active users within the initial
+                                    months post-launch.
+
                                 </li>
                                 <li>
-                                    Conceptualized and engineered a state-of-the-art event tracking system, revolutionizing operational oversight for over 300 faculty members and supervisors. This robust platform enabled precise attendance tracking and active participation monitoring for an extensive student body exceeding 2,000 across various academic and extracurricular activities. The deployment of this system resulted in a remarkable 60% increase in accountability and a 20% enhancement in student-faculty communication dynamics.
+                                    Led a cross-functional team to build and refine features such as real-time chat and peer networking, enhancing user engagement
+                                    and platform stickiness.
+
                                 </li>
                                 <li>
-                                    Spearheaded the development and deployment of a highly intuitive, React.js and Express.js-based single-page application, fundamentally transforming the scheduling process for online classes. This innovative solution dramatically reduced schedule generation time by 90% and concurrently decreased scheduling errors by 40%, thereby significantly streamlining administrative operations and enhancing the overall educational process.
+                                    Fostered strategic partnerships, successfully networking with recruiters and securing investor interest to scale the platform’s
+                                    reach and capabilities.
+
                                 </li>
                                 <li>
-                                    Expertly crafted and maintained robust, scalable backend APIs using Node.js and Express.js, incorporating sophisticated canvas Rest APIs. Skillfully executed intricate scripts for database schema migrations, ensuring seamless data flow and integrity. Administered and optimized multiple MySQL databases, forming the backbone of a comprehensive faculty management application and a detailed attendance tracking system, thereby elevating the operational capabilities to new heights.
+                                    Spearheaded the integration of AI for resume building and initiated a content-sharing extension, driving innovation and
+                                    community growth.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Freelance Full-Stack Web Developer</span> <br /><span className="dates-span">June 2023 –- Oct 2023</span><br /><span className="company-span">Northwest Missouri State University Maryville, Missouri</span>
+                            <ul>
+                                <li>
+                                    Crafted DrinkEZ’s web app using React, Node.js, and Express; enabled dynamic updates via WebSockets.
                                 </li>
                                 <li>
-                                    Diligently conducted thorough bug resolution and debugging activities, employing a methodical approach to problem-solving. This consistent focus on identifying and rectifying system flaws played a pivotal role in continually elevating the application's functionality, reliability, and overall user experience, ensuring the highest standards of software quality and performance.
+                                    Implemented robust auth protocols with JWT, bcrypt, Firebase, and managed AWS cloud infrastructure.
+                                </li>
+                                <li>
+                                    Designed a streamlined UI for efficient drink ordering using Tailwind CSS and Material UI.
+                                </li>
+                                <li>
+                                    Employed Redux for state management, enhancing app performance and user transaction flow.
                                 </li>
                             </ul>
                         </li>
 
                         <li>
+                            <span>Software Developer</span> <br /><span className="dates-span">Aug 2021 -- May 2023</span><br /><span className="company-span">Northwest Missouri State University Maryville, Missouri</span>
+                            <ul>
+                                <li>
+                                    Implemented scheduling application API using Node.js and Express.js to optimize online education platform.
+                                </li>
+                                <li>
+                                    Built event tracking system by using React and Redux, result in achieving 60% increase in accountability and a 50% boost in
+                                    student-faculty engagement in first month.
+                                </li>
+                                <li>
+                                    Optimized MySQL database queries, reducing page load times by 15% and enhancing overall application performance
+                                </li>
+                                <li>
+                                    Expertly crafted and maintained robust, scalable backend APIs using Node.js and Express.js, incorporating sophisticated canvas Rest APIs. Skillfully executed intricate scripts for database schema migrations, ensuring seamless data flow and integrity.
+                                </li>
+                                <li>
+                                    Diligently conducted thorough bug resolution and debugging activities, employing a methodical approach to problem-solving.
+                                </li>
+                            </ul>
+                        </li>
+
+                        {/* <li>
                             <span>Data Analyst</span> <br /><span className="dates-span">May 2019 -- May 2021</span><br /><span className="company-span">Northwest Missouri State University Maryville, Missouri</span>
                             <ul>
                                 <li>
@@ -222,30 +265,52 @@ const Work = () => {
                                     Utilized Python for sophisticated data modeling and manipulation tasks, demonstrating expertise in leveraging libraries such as Pandas for data analysis. Skillfully employed MySQL for robust data storage solutions, optimizing data structures and schemas in alignment with project requirements in an Agile team setting.
                                 </li>
                             </ul>
+                        </li> */}
+
+                        <li>
+                            <span>Research Assistant</span> <br /><span className="dates-span">Aug 2022 -- May 2023</span><br /><span className="company-span">Northwest Missouri State University Maryville, Missouri</span>
+                            <ul>
+                                <li>
+                                    Led a university research project developing a GPS and QR code-based parking app, showcased at CCSC 2023.
+
+                                </li>
+                                <li>
+                                    Enhanced parking efficiency for 80% of commuter students by implementing Dijkstra’s Algorithm.
+
+                                </li>
+                                <li>
+                                    Engineered Web Application using React.JS, integrating real-time geolocation for optimal parking solutions.
+
+                                </li>
+                                <li>
+                                    Implemented QR code scanning system for seamless parking registration, managed via MySQL Workbench
+                                </li>
+                            </ul>
                         </li>
 
                         <li>
-                            <span>RESEARCH ASSISTANT</span> <br /><span className="dates-span">Aug 2022 -- May 2023</span><br /><span className="company-span">Northwest Missouri State University Maryville, Missouri</span>
+                            <span>Career Ambassador</span> <br /><span className="dates-span">Aug 2022 -- May 2023</span><br /><span className="company-span">Northwest Missouri State University Maryville, Missouri</span>
                             <ul>
                                 <li>
-                                    Spearheaded a high-impact university research project focused on developing an innovative GPS and QR code-based parking application, successfully showcased at the CCSC 2023 conference. Demonstrated exceptional project management and technical skills from conception through to execution, ensuring alignment with research objectives and user requirements.
-                                    Parking Efficiency Optimization:
+                                    Actively assist 8-10 students daily with the development of professional resumes and cover letters, enhancing their job
+                                    application skills and confidence.
+
 
                                 </li>
                                 <li>
-                                    Played a key role in significantly enhancing parking efficiency, directly benefiting 80% of commuter students at NWMSU. Conducted thorough needs analysis and user behavior studies to understand and address the specific challenges faced by the student community, leading to a substantial improvement in campus parking management.
-                                    Advanced Web Application Engineering:
+                                    Skillfully manage job postings on various social media platforms using the ’Hire a Bearcat’ portal, effectively connecting students
+                                    with potential career opportunities.
+
+
                                 </li>
                                 <li>
-                                    Engineered a sophisticated WebApp utilizing Vue.js, incorporating real-time geolocation tracking to offer optimal parking solutions. Showcased proficiency in modern web development frameworks and client-side scripting, ensuring a responsive and user-friendly interface.
-                                    QR Code System Integration & Database Management:
+                                    Conduct approximately 4-5 engaging and informative tours daily for prospective students and parents, showcasing the university
+                                    and career services’ offerings.
+
                                 </li>
                                 <li>
-                                    Innovatively implemented a QR code scanning system to streamline the parking registration process, enhancing user engagement and operational efficiency. Managed the backend database using MySQL Workbench, skillfully handling data storage, retrieval, and manipulation to support the application's functionality.
-                                    User Experience Transformation:
-                                </li>
-                                <li>
-                                    Revolutionized the student parking experience by delivering a solution that achieved significant time savings and convenience. Focused on creating an intuitive user journey, from parking space discovery to registration, thereby elevating the overall campus experience for students and faculty.
+                                    Lead the organization of key campus events for Career Services including Career Day, Mock Interview Day, and Speed Networking
+                                    events, fostering valuable connections and practical experience for students.
                                 </li>
                             </ul>
                         </li>
@@ -254,7 +319,7 @@ const Work = () => {
                 </div>}
                 {work && <div className="projects-container">
                     <div className="projects-desc">
-                    <div className="top-btn" style={{ width: '200vw' }}>
+                        <div className="top-btn" style={{ width: '200vw' }}>
                             <button
                                 className={`work-btn ${work ? 'active-btn' : ''}`}
                                 onClick={handleWorkBack}
