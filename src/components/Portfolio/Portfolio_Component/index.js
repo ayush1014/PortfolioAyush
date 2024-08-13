@@ -11,6 +11,8 @@ import watch from "../../../assets/images/watch.jpeg"
 import simpleInterest from "../../../assets/images/simpleInterest.jpeg"
 import data from "../../../assets/images/data.jpeg"
 import jobPeer from "../../../assets/images/job-peer.png"
+import winkbuy from "../../../assets/images/winkbuy.png"
+import wattsCreates from "../../../assets/images/wattsCreates.png"
 
 const Work = () => {
     const [skills, setSkills] = useState(false)
@@ -60,48 +62,62 @@ const Work = () => {
     const portfolioData = [
         {
             id: 1,
+            title: "winkbuy.com",
+            description: "Winkbuy.com is a user friendly full stack affiliate marketing platform which have admin and user webapp. It is developed using React.js, Node, Express.js, MySQL, AWS S3, AWS EC2 and AWS RDS. Check it out.",
+            imageUrl: winkbuy,
+            projectUrl: "https://winkbuy.com/"
+        },
+        {
+            id: 2,
+            title: "WattsCreatesLearning",
+            description: "Watts Creates Learning is a solely frontent application developed for a small business of Mrs. Fallon Watts. Did this work as a freelancer and used React.js, Node and Express.js for the development. Used React.js for frontend and used Node and Express.js for developing SMTP server. For Hosting purposing used AWS EC2 Instance and S3 Bucket.Check it out.",
+            imageUrl: wattsCreates,
+            projectUrl: "https://wattscreates.com/"
+        },
+        {
+            id: 3,
             title: "Job-Peer.com",
             description: "Developed Job-Peer.com as an application tracker which helped students and professionals to save there job applications and track them for later success in job appling experience with touch of social media where user can follow there peer to check there numbers of applications they applied in different timeframes. Tech Stack: Node.JS, Express.Js, React.JS, JWT, Password hasing, MySQL, Node Corns, Firebase authentication. Check it out.",
             imageUrl: jobPeer,
             projectUrl: "https://www.job-peer.com/"
         },
         {
-            id: 2,
+            id: 4,
             title: "Todo List",
             description: "Built todo list web application by using React.js and Particle.js",
             imageUrl: todo,
             projectUrl: "https://ayush1014.github.io/TodoList/"
         },
         {
-            id: 3,
+            id: 5,
             title: "Qr-code-maker",
             description: "Developed customizable QR Code generator using Flask python framework",
             imageUrl: qrCode,
             projectUrl: "https://ayushkanaujia.pythonanywhere.com/"
         },
         {
-            id: 4,
+            id: 6,
             title: "Stopwatch",
             description: "Built stopwatch using React.Js",
             imageUrl: watch,
             projectUrl: "https://ayush1014.github.io/Stopwatch-using-react/"
         },
         {
-            id: 5,
+            id: 7,
             title: "RPG Game",
             description: "Developed RPG game using Godot Engine, built by GDScript, C# and C++",
             imageUrl: gameImg,
             projectUrl: "https://44351-w22.github.io/creative-game-quad-nations-studio-1/"
         },
         {
-            id: 6,
+            id: 8,
             title: "Simple Interest Calculator",
             description: "Simple interest calculator built by using Html, Css and JS for calculating simple interest by years",
             imageUrl: simpleInterest,
             projectUrl: "https://ayush1014.github.io/Simple-Interest-Calculator/"
         },
         {
-            id: 7,
+            id: 9,
             title: "HR Data Analysis Dashboard",
             description: "Analyzed HR Data by designing dynamic HR Dashboard in Tableau Desktop also created streamline data pipeline for better optimization",
             imageUrl: data,
