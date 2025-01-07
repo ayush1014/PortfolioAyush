@@ -94,7 +94,7 @@ const Contact = () => {
                   </div>
                   <div className="card-back">
                     <h3>Phone number: (312) 998 2083</h3>
-                    <h3>Email: kanaujiaayush99@gmail.com</h3>
+                    <h3>Email: kanaujiaayush1499@gmail.com</h3>
                   </div>
                 </div>
             </div>

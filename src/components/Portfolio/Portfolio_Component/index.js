@@ -158,12 +158,12 @@ const Work = () => {
                 <button className={`skill-btn ${skills ? 'active-btn' : ''}`} onClick={handleSkills}>Skills</button>
                 <button className={`experience-btn ${experience ? 'active-btn' : ''}`} onClick={handleExperience}>Experiences</button>
                 <button className={`projects-btn ${projects ? 'active-btn' : ''}`} onClick={handleProjects}>Projects</button>
-                <button className={`achievement-btn ${achievement ? 'active-btn' : ''}`} onClick={handleAchievement}>Achievements & Leaderships</button>
+                <button className={`achievement-btn ${achievement ? 'active-btn' : ''}`} onClick={handleAchievement}>Achievements & Leadership</button>
             </div>
             {showResume && (
                 <div className="resume">
-                    <h3>My Professional Resume</h3>
-                    <a href={ResumeAyushKanaujia} download="Resume.pdf" className="download-btn">Download Resume</a>
+                    <h3 style={{'fontSize': '200%', 'backgroundColor':'#FFA4B2', 'padding': '4px', 'borderRadius': '1px'}}>My Professional Resume</h3>
+                    <a href={ResumeAyushKanaujia} download="Resume.pdf" className="download-btn">DOWNLOAD RESUME</a>
                     <p>Scroll inside to view more</p>
                     <iframe src={`${ResumeAyushKanaujia}#toolbar=0&#view=Fit`} width="20%" height="100%" />
                 </div>
@@ -172,7 +172,7 @@ const Work = () => {
                 {skills && <div className="skill-container">
                     <ul>
                         <li>
-                            <span>Languages: </span> Python,JavaScript, HTML5, CSS3, SQL, Java,C, C++, Typescript
+                            <span>Languages: </span> Python, JavaScript, HTML5, CSS3, SQL, Java, C, C++, Typescript
                         </li>
                         <li>
                             <span>Frameworks: </span> React.JS, Vue.JS, Express.JS, Angular.JS, Node.JS, Flask, Django
@@ -181,7 +181,7 @@ const Work = () => {
                             <span>Databases:</span> MySQL, MongoDB, PostgreSQL, T-SQL
                         </li>
                         <li>
-                            <span>UI/UX:</span> Figma, Canva, Wordpress, Wix
+                            <span>UI/UX:</span> Tailwind, Figma, Canva, Wordpress, Wix
                         </li>
                         <li>
                             <span>Cloud Tech:</span> Amazon Web Services (AWS), Google Cloud Platform(GCP)
@@ -190,40 +190,79 @@ const Work = () => {
                             <span>Tools:</span> Visual Studio Code, Jupyter Lab, MySql Workbench, MongoDB, Postman, Azure Data Studio, Docker, Github, Tableau, PowerBI
                         </li>
                         <li>
-                            <span>Software Development Lifecycles: </span> Agile, Waterfall
+                            <span>Software Development Lifecycles: </span> Agile, Scrum, Waterfall
                         </li>
 
                     </ul>
-                    <button className="back-btn" onClick={handleBack}>Clear</button>
+                    <button className="back-btn" onClick={handleBack}>BACK TO RESUME</button>
                 </div>}
                 {experience && <div className="experience-container">
                     <ol>
                         <li>
-                            <span>Co-Founder & Full-Stack Developer</span> <br /><span className="dates-span">Oct 2023 –- Present</span><br /><span className="company-span">Job-Peer</span>
+                            <span> Graduate Teaching Assistant </span> <br /><span className="dates-span">August 2024 – Present</span><br /><span className="company-span">Northwest Missouri State University, Maryville, MO</span>
                             <ul>
                                 <li>
-                                    Architected and deployed Job-Peer.com using React, Node, Express, and MySQL, drawing 300+ active users within the initial
-                                    months post-launch.
+                                    Instructed 200 students in Excel, Access, HTML, CSS, and JavaScript, enhancing practical skills with weekly help sessions.
 
                                 </li>
                                 <li>
-                                    Led a cross-functional team to build and refine features such as real-time chat and peer networking, enhancing user engagement
-                                    and platform stickiness.
+                                    Created and graded over 400 weekly assignments, enriching academic content and student assessments.
+                                </li>
+                                <li>
+                                    Streamlined student data management and admissions, maintaining more than 500 academic records for faculty support.
+
 
                                 </li>
                                 <li>
-                                    Fostered strategic partnerships, successfully networking with recruiters and securing investor interest to scale the platform’s
-                                    reach and capabilities.
-
-                                </li>
-                                <li>
-                                    Spearheaded the integration of AI for resume building and initiated a content-sharing extension, driving innovation and
-                                    community growth.
+                                    Facilitated eﬃcient administrative operations, ensuring compliance with educational standards and process coordination
                                 </li>
                             </ul>
                         </li>
+
                         <li>
-                            <span>Freelance Full-Stack Web Developer</span> <br /><span className="dates-span">June 2023 –- Oct 2023</span><br /><span className="company-span">Northwest Missouri State University Maryville, Missouri</span>
+                            <span> Software Developer </span> <br /><span className="dates-span">June 2024 – September 2024</span><br /><span className="company-span">Watts Creates Learning, Omaha, NE</span>
+                            <ul>
+                                <li>
+                                    Constructed a 5 page business website using React.js, enhancing brand visibility and UI with transitions and SEO integration.
+
+                                </li>
+                                <li>
+                                    Implemented a custom SMTP service with Node.js and Express.js, optimizing email functionalities with SQL DBMS.
+                                </li>
+                                <li>
+                                    Conducted Agile 3-4 stand-up meetings a week to align project goals with client needs, ensuring on-time delivery.
+
+                                </li>
+                                {/* <li>
+                                    Spearheaded the integration of AI for resume building and initiated a content-sharing extension, driving innovation and
+                                    community growth.
+                                </li> */}
+                            </ul>
+                        </li>
+
+                        <li>
+                            <span>Full-Stack Developer</span> <br /><span className="dates-span">June 2023 –- June 2024</span><br /><span className="company-span">ASDS Technologies</span>
+                            <ul>
+                                <li>
+                                    Developed web applications using React.js, Node.js, Express.js, Angular, and SQL; enhanced integration with AWS and Firebase.
+
+                                </li>
+                                <li>
+                                    Designed RESTful APIs and responsive web designs, recognized by clients for timely and eﬀective delivery.
+
+                                </li>
+                                <li>
+                                    Managed 2 development teams, improving project outcomes through eﬀective leadership and technical guidance.
+
+                                </li>
+                                {/* <li>
+                                    Spearheaded the integration of AI for resume building and initiated a content-sharing extension, driving innovation and
+                                    community growth.
+                                </li> */}
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Freelance Full-Stack Web Developer</span> <br /><span className="dates-span">May 2023 –- June 2023</span><br /><span className="company-span">DrinkEz, New York, Ny</span>
                             <ul>
                                 <li>
                                     Crafted DrinkEZ’s web app using React, Node.js, and Express; enabled dynamic updates via WebSockets.
@@ -241,7 +280,7 @@ const Work = () => {
                         </li>
 
                         <li>
-                            <span>Software Developer</span> <br /><span className="dates-span">Aug 2021 -- May 2023</span><br /><span className="company-span">Northwest Missouri State University Maryville, Missouri</span>
+                            <span>Software Developer</span> <br /><span className="dates-span">Aug 2021 -- May 2023</span><br /><span className="company-span">Northwest Missouri State University, Maryville, Missouri</span>
                             <ul>
                                 <li>
                                     Implemented scheduling application API using Node.js and Express.js to optimize online education platform.
@@ -284,10 +323,10 @@ const Work = () => {
                         </li> */}
 
                         <li>
-                            <span>Research Assistant</span> <br /><span className="dates-span">Aug 2022 -- May 2023</span><br /><span className="company-span">Northwest Missouri State University Maryville, Missouri</span>
+                            <span>Research Assistant</span> <br /><span className="dates-span">Aug 2022 -- May 2023</span><br /><span className="company-span">Northwest Missouri State University, Maryville, Missouri</span>
                             <ul>
                                 <li>
-                                    Led a university research project developing a GPS and QR code-based parking app, showcased at CCSC 2023.
+                                    Led a university research project developing a GPS and QR code-based IOT parking app, showcased at CCSC 2023.
 
                                 </li>
                                 <li>
@@ -305,7 +344,7 @@ const Work = () => {
                         </li>
 
                         <li>
-                            <span>Career Ambassador</span> <br /><span className="dates-span">Aug 2022 -- May 2023</span><br /><span className="company-span">Northwest Missouri State University Maryville, Missouri</span>
+                            <span>Career Ambassador</span> <br /><span className="dates-span">Aug 2020 -- May 2022</span><br /><span className="company-span">Northwest Missouri State University, Maryville, Missouri</span>
                             <ul>
                                 <li>
                                     Actively assist 8-10 students daily with the development of professional resumes and cover letters, enhancing their job
@@ -331,7 +370,7 @@ const Work = () => {
                             </ul>
                         </li>
                     </ol>
-                    <button className="back-btn" onClick={handleBack}>Clear</button>
+                    <button className="back-btn" onClick={handleBack}>BACK TO RESUME</button>
                 </div>}
                 {work && <div className="projects-container">
                     <div className="projects-desc">
@@ -398,7 +437,7 @@ const Work = () => {
                             Please see more projects and use it by click on 'Back to projects' on the top
                         </p>
                     </div>
-                    <button className="back-btn" onClick={handleBack}>Clear</button>
+                    <button className="back-btn" onClick={handleBack}>BACK TO RESUME</button>
                 </div>}
 
                 <div>
@@ -425,7 +464,7 @@ const Work = () => {
                                 </div>
                             ))}
                         </div>
-                        <button className="back-btn" onClick={handleBack}>Clear</button>
+                        <button className="back-btn" onClick={handleBack}>BACK TO RESUME</button>
                     </div>}
                 </div>
 
@@ -441,7 +480,7 @@ const Work = () => {
                             </ul>
                         </li>
                     </ol>
-                    <h1 style={{ padding: "0", margin: "0" }}>Leaderships</h1>
+                    <h1 style={{ padding: "0", margin: "0" }}>Leadership</h1>
                     <ol>
                         <li>
                             <span>Orientation Leader</span> <br /><span className="dates-span">Aug 2022</span> <br /> <span className="company-span">Northwest Missouri State University</span>
@@ -470,7 +509,7 @@ const Work = () => {
                             </ul>
                         </li>
                     </ol>
-                    <button className="back-btn" onClick={handleBack}>Clear</button>
+                    <button className="back-btn" onClick={handleBack}>BACK TO RESUME</button>
                 </div>}
 
             </div>
