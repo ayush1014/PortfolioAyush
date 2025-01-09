@@ -162,7 +162,7 @@ const Work = () => {
             </div>
             {showResume && (
                 <div className="resume">
-                    <h3 style={{'fontSize': '200%', 'backgroundColor':'#FFA4B2', 'padding': '4px', 'borderRadius': '1px'}}>My Professional Resume</h3>
+                    <h3 style={{ 'fontSize': '200%', 'backgroundColor': '#FFA4B2', 'padding': '4px', 'borderRadius': '1px' }}>My Professional Resume</h3>
                     <a href={ResumeAyushKanaujia} download="Resume.pdf" className="download-btn">DOWNLOAD RESUME</a>
                     <p>Scroll inside to view more</p>
                     <iframe src={`${ResumeAyushKanaujia}#toolbar=0&#view=Fit`} width="20%" height="100%" />
@@ -241,7 +241,7 @@ const Work = () => {
                         </li>
 
                         <li>
-                            <span>Full-Stack Developer</span> <br /><span className="dates-span">June 2023 –- June 2024</span><br /><span className="company-span">ASDS Technologies</span>
+                            <span>Full-Stack Developer</span> <br /><span className="dates-span">June 2023 –- June 2024</span><br /><span className="company-span">SPG America, Piscataway, NJ</span>
                             <ul>
                                 <li>
                                     Developed web applications using React.js, Node.js, Express.js, Angular, and SQL; enhanced integration with AWS and Firebase.
@@ -280,7 +280,7 @@ const Work = () => {
                         </li>
 
                         <li>
-                            <span>Software Developer</span> <br /><span className="dates-span">Aug 2021 -- May 2023</span><br /><span className="company-span">Northwest Missouri State University, Maryville, Missouri</span>
+                            <span>Software Developer</span> <br /><span className="dates-span">August 2021 -- May 2023</span><br /><span className="company-span">Northwest Missouri State University, Maryville, Missouri</span>
                             <ul>
                                 <li>
                                     Implemented scheduling application API using Node.js and Express.js to optimize online education platform.
@@ -323,7 +323,7 @@ const Work = () => {
                         </li> */}
 
                         <li>
-                            <span>Research Assistant</span> <br /><span className="dates-span">Aug 2022 -- May 2023</span><br /><span className="company-span">Northwest Missouri State University, Maryville, Missouri</span>
+                            <span>Research Assistant</span> <br /><span className="dates-span">August 2022 -- May 2023</span><br /><span className="company-span">Northwest Missouri State University, Maryville, Missouri</span>
                             <ul>
                                 <li>
                                     Led a university research project developing a GPS and QR code-based IOT parking app, showcased at CCSC 2023.
@@ -342,9 +342,31 @@ const Work = () => {
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            <span>Junior Frontend Developer</span> <br /><span className="dates-span">May 2021 -- August 2021</span><br /><span className="company-span">ASDS Technologies, New Delhi, India</span>
+                            <ul>
+                                <li>
+                                    Developed and refined UX/UI components for customer-facing applications, enhancing scalability and user experience.
+
+
+                                </li>
+                                <li>
+                                    Collaborated with product managers and customers to define and expand software capabilities.
+
+
+                                </li>
+                                <li>
+                                    Conducted code reviews, unit testing, and implemented continuous integration to uphold code quality standards.
+
+                                </li>
+                                <li>
+                                    Managed technical debt reduction and internal efficiency improvements, ensuring sustainable software development practices.
+                                </li>
+                            </ul>
+                        </li>
 
                         <li>
-                            <span>Career Ambassador</span> <br /><span className="dates-span">Aug 2020 -- May 2022</span><br /><span className="company-span">Northwest Missouri State University, Maryville, Missouri</span>
+                            <span>Career Ambassador</span> <br /><span className="dates-span">August 2020 -- May 2022</span><br /><span className="company-span">Northwest Missouri State University, Maryville, Missouri</span>
                             <ul>
                                 <li>
                                     Actively assist 8-10 students daily with the development of professional resumes and cover letters, enhancing their job
@@ -388,7 +410,7 @@ const Work = () => {
                         <ol>
                             <li>
                                 <span>
-                                    SOCIAL MEDIA APPLICATION (TRENDING_HASH)</span> <br /><span className="dates-span">Aug 2023 -- Jan 2024</span> <br /> <span className="company-span">Full Stack Project</span>
+                                    SOCIAL MEDIA APPLICATION (TRENDING_HASH)</span> <br /><span className="dates-span">August 2023 -- Jan 2024</span> <br /> <span className="company-span">Full Stack Project</span>
                                 <ul>
                                     <li>
                                         Complex Application Architecture: Spearheaded the engineering of a robust full-stack social media platform leveraging React.js for dynamic front-end interactions and Node.js for efficient server-side processing, seamlessly integrated with a MySQL database for data persistence.
@@ -409,7 +431,7 @@ const Work = () => {
                             </li>
 
                             <li>
-                                <span>UBER DATA ANALYSIS AND ENGINEERING</span> <br /><span className="dates-span">May 2023 -- Aug 2023</span> <br /> <span className="company-span">Data Analytics and Data Engineering Project</span>
+                                <span>UBER DATA ANALYSIS AND ENGINEERING</span> <br /><span className="dates-span">May 2023 -- August 2023</span> <br /> <span className="company-span">Data Analytics and Data Engineering Project</span>
                                 <ul>
                                     <li>
                                         Conducted in-depth data analytics on comprehensive Uber datasets, utilizing Google Cloud Platform (GCP) Storage for scalable data warehousing. Employed Python for intricate data manipulation and analysis tasks, demonstrating proficiency in data science programming.
@@ -483,7 +505,7 @@ const Work = () => {
                     <h1 style={{ padding: "0", margin: "0" }}>Leadership</h1>
                     <ol>
                         <li>
-                            <span>Orientation Leader</span> <br /><span className="dates-span">Aug 2022</span> <br /> <span className="company-span">Northwest Missouri State University</span>
+                            <span>Orientation Leader</span> <br /><span className="dates-span">August 2022</span> <br /> <span className="company-span">Northwest Missouri State University</span>
                             <ul>
                                 <li>
                                     Assisted and helped new students by giving tours, information about campus and Academic help.
@@ -494,7 +516,7 @@ const Work = () => {
                             </ul>
                         </li>
                         <li>
-                            <span>Soar Leader</span> <br /><span className="dates-span">June 2022 -- Aug 2022</span> <br /> <span className="company-span">Northwest Missouri State University</span>
+                            <span>Soar Leader</span> <br /><span className="dates-span">June 2022 -- August 2022</span> <br /> <span className="company-span">Northwest Missouri State University</span>
                             <ul>
                                 <li>
                                     Provided brief tour of campus and answered questions of parents and students about different organizations and offices
