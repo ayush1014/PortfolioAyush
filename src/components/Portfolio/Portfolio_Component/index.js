@@ -65,7 +65,7 @@ const Work = () => {
         {
             id: 1,
             title: "Fleet Management System",
-            description: "A secure full-stack fleet management platform built for Northwest Missouri State University (Client) to manage vehicles, refueling, and maintenance. Features include role based authentication, vehicle profiles, digital receipt management, user activity tracking, and annual report generation. Check it out.",
+            description: "A secure full-stack fleet management platform built for Northwest Missouri State University (Client) to manage vehicles, refueling, and maintenance. Features include role based authentication, vehicle profiles, digital receipt management, user activity tracking, and annual report generation. Please check it out.",
             imageUrl: FleetManagement,
             projectUrl: "https://frontend-nwmsu-fleet-management.vercel.app/"
         },
