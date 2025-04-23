@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.177bc526.css",
-    "main.js": "/static/js/main.392e59e3.js",
+    "main.js": "/static/js/main.b76482a0.js",
     "static/media/wattsCreates.png": "/static/media/wattsCreates.5684eb6e5141ec06b060.png",
     "static/media/winkbuy.png": "/static/media/winkbuy.bf71d913ff54c607e547.png",
     "static/media/data.jpeg": "/static/media/data.36db8b65931bc2b4f442.jpeg",
     "static/media/game.jpeg": "/static/media/game.7b41a2295b231433eaab.jpeg",
+    "static/media/fleetManagement.png": "/static/media/fleetManagement.912f80069d1b54657675.png",
     "static/media/qrcode.jpeg": "/static/media/qrcode.cfa26313151a729ec0b8.jpeg",
     "static/media/job-peer.png": "/static/media/job-peer.156885bd5e50328c4263.png",
     "static/media/watch.jpeg": "/static/media/watch.bea66937b604f1bb2f65.jpeg",
@@ -22,10 +23,10 @@
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/index.html",
     "main.177bc526.css.map": "/static/css/main.177bc526.css.map",
-    "main.392e59e3.js.map": "/static/js/main.392e59e3.js.map"
+    "main.b76482a0.js.map": "/static/js/main.b76482a0.js.map"
   },
   "entrypoints": [
     "static/css/main.177bc526.css",
-    "static/js/main.392e59e3.js"
+    "static/js/main.b76482a0.js"
   ]
 }
