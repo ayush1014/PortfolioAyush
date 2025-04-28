@@ -88,7 +88,7 @@ const Work = () => {
             title: "Job-Peer.com",
             description: "Developed Job-Peer.com as an application tracker which helped students and professionals to save there job applications and track them for later success in job appling experience with touch of social media where user can follow there peer to check there numbers of applications they applied in different timeframes. Tech Stack: Node.JS, Express.Js, React.JS, JWT, Password hasing, MySQL, Node Corns, Firebase authentication. Check it out.",
             imageUrl: jobPeer,
-            projectUrl: "https://www.job-peer.com/"
+            projectUrl: "https://www.job-peer.com/login"
         },
         {
             id: 5,
@@ -170,9 +170,10 @@ const Work = () => {
                 <button className={`achievement-btn ${achievement ? 'active-btn' : ''}`} onClick={handleAchievement}>Achievements & Leadership</button>
             </div>
             {showResume && (
+                //Resume Component
                 <div className="resume">
                     <h3 style={{ 'fontSize': '200%', 'backgroundColor': '#FFA4B2', 'padding': '4px', 'borderRadius': '1px' }}>My Professional Resume</h3>
-                    <a href={ResumeAyushKanaujia} download="Resume.pdf" className="download-btn">DOWNLOAD RESUME</a>
+                    <a href={ResumeAyushKanaujia} download="KanaujiaAyush_Resumé.pdf" className="download-btn">DOWNLOAD RESUME</a>
                     <p>Scroll inside to view more</p>
                     <iframe src={`${ResumeAyushKanaujia}#toolbar=0&#view=Fit`} width="20%" height="100%" />
                 </div>
