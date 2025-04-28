@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.177bc526.css",
-    "main.js": "/static/js/main.def61664.js",
+    "main.js": "/static/js/main.b9233145.js",
     "static/media/wattsCreates.png": "/static/media/wattsCreates.5684eb6e5141ec06b060.png",
     "static/media/winkbuy.png": "/static/media/winkbuy.bf71d913ff54c607e547.png",
     "static/media/data.jpeg": "/static/media/data.36db8b65931bc2b4f442.jpeg",
@@ -12,7 +12,7 @@
     "static/media/watch.jpeg": "/static/media/watch.bea66937b604f1bb2f65.jpeg",
     "static/media/simpleInterest.jpeg": "/static/media/simpleInterest.d2c7ac8fe85352d4ad40.jpeg",
     "static/media/todo.jpeg": "/static/media/todo.27ff3aa4fd73bc0e94f0.jpeg",
-    "static/media/Ayush_Kanaujia_Resume.pdf": "/static/media/Ayush_Kanaujia_Resume.3e525f3d3e8274052bfc.pdf",
+    "static/media/Ayush_Kanaujia_Resume.pdf": "/static/media/Ayush_Kanaujia_Resume.7351e955a57b4092aabf.pdf",
     "static/media/name.png": "/static/media/name.38728ff254c4a4a0513b.png",
     "static/media/AK.png": "/static/media/AK.ca5c4ec05ca8c502b119.png",
     "static/media/A.png": "/static/media/A.be7c8f340d977413d59c.png",
@@ -23,10 +23,10 @@
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/index.html",
     "main.177bc526.css.map": "/static/css/main.177bc526.css.map",
-    "main.def61664.js.map": "/static/js/main.def61664.js.map"
+    "main.b9233145.js.map": "/static/js/main.b9233145.js.map"
   },
   "entrypoints": [
     "static/css/main.177bc526.css",
-    "static/js/main.def61664.js"
+    "static/js/main.b9233145.js"
   ]
 }
