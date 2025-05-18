@@ -474,7 +474,7 @@ const Work = () => {
 
                 <div>
                     {projects && <div className="work-container">
-                        <div className="top-btn" style={{ width: '200vw' }}>
+                        <div className="top-btn" style={{ }}>
                             <button
                                 className={`work-btn ${work ? 'active-btn' : ''}`}
                                 onClick={handleWork}
