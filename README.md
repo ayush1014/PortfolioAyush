@@ -1,3 +1,3 @@
 # PortfolioAyush
 
- https://ayush1014.github.io/PortfolioAyush/
+ https://www.ayushkanaujia.com/
