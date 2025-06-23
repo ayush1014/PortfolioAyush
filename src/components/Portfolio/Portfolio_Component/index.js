@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 // import resume from "../../../assets/docs/ResumeAyush.pdf"
-import ResumeAyushKanaujia from "../../../assets/docs/Ayush_Kanaujia_Résumé.pdf"
+import ResumeAyushKanaujia from "../../../assets/docs/Ayush_Kanauji_Résumé.pdf"
 
 import './index.scss'
 import gameImg from "../../../assets/images/game.jpeg"
@@ -173,7 +173,7 @@ const Work = () => {
                 //Resume Component
                 <div className="resume">
                     <h3 style={{ 'fontSize': '200%', 'backgroundColor': '#FFA4B2', 'padding': '4px', 'borderRadius': '1px' }}>My Professional Resume</h3>
-                    <a href={ResumeAyushKanaujia} download="KanaujiaAyush_Resumé.pdf" className="download-btn">DOWNLOAD RESUME</a>
+                    <a href={ResumeAyushKanaujia} download="KanaujiaAyush_Résumé.pdf" className="download-btn">DOWNLOAD RESUME</a>
                     <p>Scroll inside to view more</p>
                     <iframe src={`${ResumeAyushKanaujia}#toolbar=0&#view=Fit`} width="20%" height="100%" />
                 </div>
