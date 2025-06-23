@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 // import resume from "../../../assets/docs/ResumeAyush.pdf"
-import ResumeAyushKanaujia from "../../../assets/docs/Ayush_Kanaujia_Résumé.pdf"
+import ResumeAyushKanaujia from '../../../assets/docs/Ayush_Kanaujia_Résumé.pdf'
 
 import './index.scss'
 import gameImg from "../../../assets/images/game.jpeg"
