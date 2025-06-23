@@ -170,9 +170,10 @@ const Work = () => {
                 <button className={`achievement-btn ${achievement ? 'active-btn' : ''}`} onClick={handleAchievement}>Achievements & Leadership</button>
             </div>
             {showResume && (
-                //Resume Component
+                //Resume Component 
                 <div className="resume">
                     <h3 style={{ 'fontSize': '200%', 'backgroundColor': '#FFA4B2', 'padding': '4px', 'borderRadius': '1px' }}>My Professional Resume</h3>
+                    {/* Download Button */}
                     <a href={ResumeAyushKanaujia} download="KanaujiaAyush_Résumé.pdf" className="download-btn">DOWNLOAD RESUME</a>
                     <p>Scroll inside to view more</p>
                     <iframe src={`${ResumeAyushKanaujia}#toolbar=0&#view=Fit`} width="20%" height="100%" />
