@@ -14,6 +14,7 @@ import jobPeer from "../../../assets/images/job-peer.png"
 import winkbuy from "../../../assets/images/winkbuy.png"
 import wattsCreates from "../../../assets/images/wattsCreates.png"
 import FleetManagement from "../../../assets/images/fleetManagement.png"
+import Astro2Sphere from "../../../assets/images/Astro2Sphere.png"
 
 const Work = () => {
     const [skills, setSkills] = useState(false)
@@ -61,74 +62,80 @@ const Work = () => {
     };
 
     const portfolioData = [
-
         {
             id: 1,
+            title: "Astro2Sphere",
+            description: "Astrology-based social platform with signups, compatibility scoring (OpenAI API, LLM embeddings, K-means), real-time chat (WebSockets), bookings, AWS deployment.",
+            imageUrl: Astro2Sphere,
+            projectUrl: "https://www.astro2sphere.com/"
+        },
+        {
+            id: 2,
             title: "Fleet Management System",
-            description: "A secure full-stack fleet management platform built for Northwest Missouri State University (Client) to manage vehicles, refueling, and maintenance. Features include role based authentication, vehicle profiles, digital receipt management, user activity tracking, and annual report generation. Please check it out.",
+            description: "Full-stack fleet management for NWMSU: role-based auth, vehicle profiles, receipts, activity tracking, annual reports.",
             imageUrl: FleetManagement,
             projectUrl: "https://frontend-nwmsu-fleet-management.vercel.app/"
         },
         {
-            id: 2,
+            id: 3,
             title: "winkbuy.com",
-            description: "Winkbuy.com is a user friendly full stack affiliate marketing platform which have admin and user webapp. It is developed using React.js, Node, Express.js, MySQL, AWS S3, AWS EC2 and AWS RDS. Check it out.",
+            description: "Affiliate marketing platform with admin/user webapp. Stack: React, Node, Express, MySQL, AWS S3/EC2/RDS.",
             imageUrl: winkbuy,
             projectUrl: "https://winkbuy.com/"
         },
         {
-            id: 3,
+            id: 4,
             title: "WattsCreatesLearning",
-            description: "Watts Creates Learning is a solely frontent application developed for a small business of Mrs. Fallon Watts. Did this work as a freelancer and used React.js, Node and Express.js for the development. Used React.js for frontend and used Node and Express.js for developing SMTP server. For Hosting purposing used AWS EC2 Instance and S3 Bucket.Check it out.",
+            description: "Business website for Watts Creates Learning. React frontend, Node/Express SMTP server, AWS hosting.",
             imageUrl: wattsCreates,
             projectUrl: "https://wattscreates.com/"
         },
         {
-            id: 4,
+            id: 5,
             title: "Job-Peer.com",
-            description: "Developed Job-Peer.com as an application tracker which helped students and professionals to save there job applications and track them for later success in job appling experience with touch of social media where user can follow there peer to check there numbers of applications they applied in different timeframes. Tech Stack: Node.JS, Express.Js, React.JS, JWT, Password hasing, MySQL, Node Corns, Firebase authentication. Check it out.",
+            description: "Job application tracker with social features. Stack: Node, Express, React, JWT, MySQL, Firebase.",
             imageUrl: jobPeer,
             projectUrl: "https://www.job-peer.com/login"
         },
         {
-            id: 5,
+            id: 6,
             title: "Todo List",
-            description: "Built todo list web application by using React.js and Particle.js",
+            description: "Todo list app using React and Particle.js.",
             imageUrl: todo,
             projectUrl: "https://ayush1014.github.io/TodoList/"
         },
         {
-            id: 6,
+            id: 7,
             title: "Qr-code-maker",
-            description: "Developed customizable QR Code generator using Flask python framework",
+            description: "Customizable QR code generator built with Flask.",
             imageUrl: qrCode,
             projectUrl: "https://ayushkanaujia.pythonanywhere.com/"
         },
         {
-            id: 7,
+            id: 8,
             title: "Stopwatch",
-            description: "Built stopwatch using React.Js",
+            description: "Stopwatch app built with React.",
             imageUrl: watch,
             projectUrl: "https://ayush1014.github.io/Stopwatch-using-react/"
         },
         {
-            id: 8,
+            id: 9,
             title: "RPG Game",
-            description: "Developed RPG game using Godot Engine, built by GDScript, C# and C++",
+            description: "RPG game built with Godot (GDScript, C#, C++).",
             imageUrl: gameImg,
             projectUrl: "https://44351-w22.github.io/creative-game-quad-nations-studio-1/"
         },
         {
-            id: 9,
+            id: 10,
             title: "Simple Interest Calculator",
-            description: "Simple interest calculator built by using Html, Css and JS for calculating simple interest by years",
+            description: "Simple interest calculator using HTML, CSS, JS.",
             imageUrl: simpleInterest,
             projectUrl: "https://ayush1014.github.io/Simple-Interest-Calculator/"
         },
         {
-            id: 10,
+            id: 11,
             title: "HR Data Analysis Dashboard",
-            description: "Analyzed HR Data by designing dynamic HR Dashboard in Tableau Desktop also created streamline data pipeline for better optimization",
+            description: "HR dashboard in Tableau with optimized data pipeline.",
             imageUrl: data,
             projectUrl: "https://public.tableau.com/app/profile/ayush.kanaujia/viz/HR_Analysis_17046017914930/HRANALYSTICSDASHBOARD"
         },
