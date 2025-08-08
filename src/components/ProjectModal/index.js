@@ -118,11 +118,17 @@ const ProjectModal = ({ showModal, setShowModal }) => {
                     <button className="carousel-btn prev-btn" onClick={prevProject}>❮</button>
                     
                     <div className="carousel-content">
-                        <img 
-                            src={projects[currentProject].image} 
-                            alt={projects[currentProject].title} 
-                            className="modal-img" 
-                        />
+                        <a
+                            href={projects[currentProject].url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src={projects[currentProject].image}
+                                alt={projects[currentProject].title}
+                                className="modal-img"
+                            />
+                        </a>
                         <h2 style={{ color: "white", fontFamily: "Great-vibes", fontSize: "20px" }}>
                             🚀 Check out my recent projects
                         </h2>
