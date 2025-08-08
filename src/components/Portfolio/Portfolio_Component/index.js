@@ -23,7 +23,7 @@ const Work = () => {
     const [achievement, setAchievement] = useState(false)
     const [work, setWork] = useState(false)
     const [showResume, setShowResume] = useState(true);
-    const [hover, setHover] = useState(false)
+    const [hover, setHover] = useState(false);
 
     const handleSkills = () => {
         setSkills(true);
@@ -482,7 +482,7 @@ const Work = () => {
 
                 <div>
                     {projects && <div className="work-container">
-                        <div className="top-btn" style={{ }}>
+                        <div className="top-btn" style={{}}>
                             <button
                                 className={`work-btn ${work ? 'active-btn' : ''}`}
                                 onClick={handleWork}

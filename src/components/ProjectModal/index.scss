@@ -1,0 +1,682 @@
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    backdrop-filter: blur(35px);
+    animation: fadeInOverlay 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes fadeInOverlay {
+    from {
+        opacity: 0;
+        backdrop-filter: blur(0px);
+    }
+    to {
+        opacity: 1;
+        backdrop-filter: blur(35px);
+    }
+}
+
+/* Glass Modal */
+.glass-modal {
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.02) 0%, 
+        rgba(255, 255, 255, 0.008) 50%, 
+        rgba(255, 255, 255, 0.03) 100%);
+    backdrop-filter: blur(50px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 30px;
+    padding: 45px 35px;
+    max-width: 580px;
+    width: 92%;
+    text-align: center;
+    position: relative;
+    box-shadow: 
+        0 30px 60px rgba(0, 0, 0, 0.1),
+        0 15px 40px rgba(252, 21, 37, 0.03),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.03);
+    animation: modalSlideIn 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.glass-modal::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.06) 0%, 
+        transparent 25%, 
+        transparent 5%, 
+        rgba(252, 21, 37, 0.03) 50%);
+    border-radius: 30px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.glass-modal::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+        rgba(252, 21, 37, 0.01) 0%, 
+        transparent 3%, 
+        transparent 7%, 
+        rgba(255, 255, 255, 0.02) 100%);
+    border-radius: 30px;
+    pointer-events: none;
+}
+
+@keyframes modalSlideIn {
+    0% {
+        transform: scale(0.6) translateY(-120px) rotateX(15deg);
+        opacity: 0;
+        filter: blur(15px);
+    }
+    30% {
+        transform: scale(0.75) translateY(-60px) rotateX(10deg);
+        opacity: 0.3;
+        filter: blur(8px);
+    }
+    60% {
+        transform: scale(0.95) translateY(-10px) rotateX(3deg);
+        opacity: 0.8;
+        filter: blur(2px);
+    }
+    100% {
+        transform: scale(1) translateY(0) rotateX(0deg);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 10001;
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-btn:hover {
+    background: rgba(252, 21, 37, 0.15);
+    color: white;
+    transform: scale(1.15) rotate(90deg);
+    box-shadow: 0 10px 30px rgba(252, 21, 37, 0.3);
+    border-color: rgba(252, 21, 37, 0.4);
+}
+
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0;
+    min-height: 320px;
+}
+
+/* Carousel Content */
+.carousel-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    animation: slideInContent 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes slideInContent {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Modal Image Link */
+.modal-img-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.modal-img-link:hover {
+    transform: scale(1.02) translateY(-4px);
+    box-shadow: 0 25px 50px rgba(252, 21, 37, 0.15);
+}
+
+/* Modal Image */
+.modal-img {
+    width: 88%;
+    max-width: 340px;
+    height: auto;
+    border-radius: 25px;
+    margin: 0 auto 25px auto;
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 
+        0 20px 45px rgba(0, 0, 0, 0.25),
+        0 8px 25px rgba(252, 21, 37, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    filter: brightness(1.05) contrast(1.02);
+    cursor: pointer;
+    display: block;
+}
+
+.modal-img-link:hover .modal-img {
+    transform: scale(1.01);
+    filter: brightness(1.1) contrast(1.05);
+}
+
+/* Carousel Navigation Buttons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.05), 
+        rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    backdrop-filter: blur(25px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    font-weight: 700;
+}
+
+.carousel-btn:hover {
+    background: linear-gradient(135deg, 
+        rgba(252, 21, 37, 0.2), 
+        rgba(252, 21, 37, 0.1));
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 12px 30px rgba(252, 21, 37, 0.25);
+    color: white;
+    border-color: rgba(252, 21, 37, 0.3);
+}
+
+.carousel-btn:active {
+    transform: translateY(-50%) scale(0.95);
+    transition: all 0.1s ease;
+}
+
+.prev-btn {
+    left: -30px;
+    animation: slideInLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
+}
+
+.next-btn {
+    right: -30px;
+    animation: slideInRight 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s both;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateY(-50%) translateX(-40px) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-50%) translateX(0) scale(1);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateY(-50%) translateX(40px) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-50%) translateX(0) scale(1);
+    }
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin: 15px 0;
+    animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.indicator {
+    width: 5px;
+    height: 12.75px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.indicator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(252, 21, 37, 0.9);
+    border-radius: 50%;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: translate(-50%, -50%);
+}
+
+.indicator.active {
+    background: rgba(252, 21, 37, 0.3);
+    border-color: rgba(252, 21, 37, 0.7);
+    transform: scale(1.4);
+    box-shadow: 0 0 15px rgba(252, 21, 37, 0.4);
+}
+
+.indicator.active::before {
+    width: 100%;
+    height: 100%;
+}
+
+.indicator:hover:not(.active) {
+    background: rgba(252, 21, 37, 0.12);
+    border-color: rgba(252, 21, 37, 0.5);
+    transform: scale(1.2);
+}
+
+/* Modal Buttons Container */
+.modal-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s both;
+}
+
+/* Modal Links */
+.modal-link {
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+    border: 1px solid transparent;
+    min-width: 180px;
+    text-align: center;
+}
+
+/* Primary Button (Red) */
+.modal-link.primary {
+    background: linear-gradient(135deg, 
+        rgba(252, 21, 37, 0.9) 0%, 
+        rgba(255, 107, 107, 0.8) 50%, 
+        rgba(252, 21, 37, 0.9) 100%);
+    color: white;
+    box-shadow: 
+        0 10px 30px rgba(252, 21, 37, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.modal-link.primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.2), 
+        transparent);
+    transition: left 0.6s ease;
+}
+
+.modal-link.primary:hover::before {
+    left: 100%;
+}
+
+.modal-link.primary:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 
+        0 18px 40px rgba(252, 21, 37, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, 
+        rgba(255, 107, 107, 0.9) 0%, 
+        rgba(252, 21, 37, 0.8) 50%, 
+        rgba(255, 107, 107, 0.9) 100%);
+}
+
+/* Secondary Button (White with Red Text) */
+.modal-link.secondary {
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.95) 0%, 
+        rgba(255, 255, 255, 0.9) 50%, 
+        rgba(255, 255, 255, 0.95) 100%);
+    color: rgb(252, 21, 37);
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    border-color: rgba(252, 21, 37, 0.1);
+}
+
+.modal-link.secondary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(252, 21, 37, 0.1), 
+        transparent);
+    transition: left 0.6s ease;
+}
+
+.modal-link.secondary:hover::before {
+    left: 100%;
+}
+
+.modal-link.secondary:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 
+        0 18px 40px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 1) 0%, 
+        rgba(255, 255, 255, 0.95) 50%, 
+        rgba(255, 255, 255, 1) 100%);
+    border-color: rgba(252, 21, 37, 0.2);
+    color: rgb(220, 18, 32);
+}
+
+.modal-link:active {
+    transform: translateY(-1px) scale(0.98);
+    transition: all 0.1s ease;
+}
+
+/* Swipe Hint Animation for Mobile */
+.swipe-hint {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    z-index: 20;
+}
+
+.hand-gesture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    animation: swipeHintFade 0.8s ease-out;
+}
+
+.hand-icon {
+    font-size: 24px;
+    animation: swipeAnimation 2s ease-in-out infinite;
+    filter: drop-shadow(0 2px 8px rgba(255, 255, 255, 0.3));
+}
+
+.swipe-text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    font-weight: 500;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    animation: textPulse 2s ease-in-out infinite;
+}
+
+@keyframes swipeAnimation {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10px);
+    }
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes textPulse {
+    0%, 100% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes swipeHintFade {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* Enhanced Header Text */
+.glass-modal h2 {
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.95), 
+        rgba(252, 21, 37, 0.8));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: "Great-vibes", cursive;
+    font-size: 24px;
+    margin: 20px 0;
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    animation: textGlow 3s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow {
+    from {
+        filter: drop-shadow(0 0 8px rgba(252, 21, 37, 0.2));
+    }
+    to {
+        filter: drop-shadow(0 0 20px rgba(252, 21, 37, 0.4));
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .glass-modal {
+        margin: 15px;
+        padding: 35px 25px;
+        max-width: calc(100% - 30px);
+        border-radius: 25px;
+    }
+    
+    .modal-img {
+        width: 95%;
+        max-width: 300px;
+    }
+    
+    /* Hide carousel arrows on mobile */
+    .carousel-btn {
+        display: none;
+    }
+    
+    /* Show swipe hint on mobile */
+    .swipe-hint {
+        display: block;
+    }
+    
+    .carousel-container {
+        touch-action: pan-y;
+        user-select: none;
+        position: relative;
+    }
+    
+    .modal-buttons {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 30px;
+    }
+    
+    .modal-link {
+        padding: 14px 28px;
+        font-size: 15px;
+        min-width: auto;
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    .close-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+        top: 20px;
+        right: 25px;
+    }
+    
+    .carousel-indicators {
+        gap: 6px;
+        margin: 15px 0;
+    }
+    
+    .indicator {
+        width: 5px;
+        height: 12.75px;
+    }
+}
+
+@media (max-width: 480px) {
+    .glass-modal {
+        margin: 10px;
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+    
+    .carousel-container {
+        margin: 25px 0;
+        min-height: auto;
+    }
+    
+    /* Ensure arrows are hidden on small mobile */
+    .carousel-btn,
+    .prev-btn,
+    .next-btn {
+        display: none !important;
+    }
+    
+    .carousel-content {
+        width: 100%;
+        position: relative;
+    }
+    
+    .swipe-hint {
+        bottom: -50px;
+    }
+    
+    .hand-icon {
+        font-size: 20px;
+    }
+    
+    .swipe-text {
+        font-size: 12px;
+    }
+    
+    .indicator {
+        width: 5px;
+        height: 12.75px;
+    }
+    
+    .modal-link {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+    
+    .glass-modal h2 {
+        font-size: 20px;
+    }
+    
+    .close-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        top: 15px;
+        right: 20px;
+    }
+}
+
+/* Desktop hover states - only apply on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+    .carousel-btn:hover {
+        background: linear-gradient(135deg, 
+            rgba(252, 21, 37, 0.2), 
+            rgba(252, 21, 37, 0.1));
+        transform: translateY(-50%) scale(1.1);
+        box-shadow: 0 12px 30px rgba(252, 21, 37, 0.25);
+        color: white;
+        border-color: rgba(252, 21, 37, 0.3);
+    }
+}
