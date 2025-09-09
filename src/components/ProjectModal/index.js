@@ -4,6 +4,7 @@ import Astro2Sphere from "../../assets/images/Astro2Sphere.png";
 import FleetManagement from "../../assets/images/fleetManagement.png";
 import winkbuy from "../../assets/images/winkbuy.png";
 import wattsCreates from "../../assets/images/wattsCreates.png";
+import Citetalk from "../../assets/images/Citetalk.png";
 
 const ProjectModal = ({ showModal, setShowModal }) => {
     const [currentProject, setCurrentProject] = useState(0);
@@ -21,20 +22,27 @@ const ProjectModal = ({ showModal, setShowModal }) => {
         },
         {
             id: 2,
+            title: "CiteTalk",
+            image: Citetalk,
+            url: "https://www.citetalk.com/",
+            buttonText: "CiteTalk"
+        },
+        {
+            id: 3,
             title: "Fleet Management System",
             image: FleetManagement,
             url: "https://frontend-nwmsu-fleet-management.vercel.app/",
             buttonText: "Fleet Management"
         },
         {
-            id: 3,
+            id: 4,
             title: "winkbuy.com",
             image: winkbuy,
             url: "https://winkbuy.com/",
             buttonText: "winkbuy.com"
         },
         {
-            id: 4,
+            id: 5,
             title: "WattsCreatesLearning",
             image: wattsCreates,
             url: "https://wattscreates.com/",

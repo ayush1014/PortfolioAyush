@@ -15,6 +15,7 @@ import winkbuy from "../../../assets/images/winkbuy.png"
 import wattsCreates from "../../../assets/images/wattsCreates.png"
 import FleetManagement from "../../../assets/images/fleetManagement.png"
 import Astro2Sphere from "../../../assets/images/Astro2Sphere.png"
+import Citetalk from "../../../assets/images/Citetalk.png"
 
 const Work = () => {
     const [skills, setSkills] = useState(false)
@@ -62,78 +63,86 @@ const Work = () => {
     };
 
     const portfolioData = [
+        
         {
             id: 1,
+            title: "CiteTalk",
+            description: "Citetalk: AI tool that ingests documents, youtube URLs & Article Links, builds semantic vectors, and delivers fast AI summaries and conversational search.",
+            imageUrl: Citetalk,
+            projectUrl: "https://www.citetalk.com/"
+        },
+        {
+            id: 2,
             title: "Astro2Sphere",
             description: "Astrology-based social platform with signups, compatibility scoring (OpenAI API, LLM embeddings, K-means), real-time chat (WebSockets), bookings, AWS deployment.",
             imageUrl: Astro2Sphere,
             projectUrl: "https://www.astro2sphere.com/"
         },
         {
-            id: 2,
+            id: 3,
             title: "Fleet Management System",
             description: "Full-stack fleet management for NWMSU: role-based auth, vehicle profiles, receipts, activity tracking, annual reports.",
             imageUrl: FleetManagement,
             projectUrl: "https://frontend-nwmsu-fleet-management.vercel.app/"
         },
         {
-            id: 3,
+            id: 4,
             title: "winkbuy.com",
             description: "Affiliate marketing platform with admin/user webapp. Stack: React, Node, Express, MySQL, AWS S3/EC2/RDS.",
             imageUrl: winkbuy,
             projectUrl: "https://winkbuy.com/"
         },
         {
-            id: 4,
+            id: 5,
             title: "WattsCreatesLearning",
             description: "Business website for Watts Creates Learning. React frontend, Node/Express SMTP server, AWS hosting.",
             imageUrl: wattsCreates,
             projectUrl: "https://wattscreates.com/"
         },
         {
-            id: 5,
+            id: 6,
             title: "Job-Peer.com",
             description: "Job application tracker with social features. Stack: Node, Express, React, JWT, MySQL, Firebase.",
             imageUrl: jobPeer,
             projectUrl: "https://www.job-peer.com/login"
         },
         {
-            id: 6,
+            id: 7,
             title: "Todo List",
             description: "Todo list app using React and Particle.js.",
             imageUrl: todo,
             projectUrl: "https://ayush1014.github.io/TodoList/"
         },
         {
-            id: 7,
+            id: 8,
             title: "Qr-code-maker",
             description: "Customizable QR code generator built with Flask.",
             imageUrl: qrCode,
             projectUrl: "https://qr-code-maker.onrender.com/"
         },
         {
-            id: 8,
+            id: 9,
             title: "Stopwatch",
             description: "Stopwatch app built with React.",
             imageUrl: watch,
             projectUrl: "https://ayush1014.github.io/Stopwatch-using-react/"
         },
         {
-            id: 9,
+            id: 10,
             title: "RPG Game",
             description: "RPG game built with Godot (GDScript, C#, C++).",
             imageUrl: gameImg,
             projectUrl: "https://44351-w22.github.io/creative-game-quad-nations-studio-1/"
         },
         {
-            id: 10,
+            id: 11,
             title: "Simple Interest Calculator",
             description: "Simple interest calculator using HTML, CSS, JS.",
             imageUrl: simpleInterest,
             projectUrl: "https://ayush1014.github.io/Simple-Interest-Calculator/"
         },
         {
-            id: 11,
+            id: 12,
             title: "HR Data Analysis Dashboard",
             description: "HR dashboard in Tableau with optimized data pipeline.",
             imageUrl: data,
