@@ -13,13 +13,13 @@ const ProjectModal = ({ showModal, setShowModal }) => {
     const [showSwipeHint, setShowSwipeHint] = useState(true);
 
     const projects = [
-        {
-            id: 1,
-            title: "Astro2Sphere",
-            image: Astro2Sphere,
-            url: "https://www.astro2sphere.com/",
-            buttonText: "Astro2Sphere.com"
-        },
+        // {
+        //     id: 1,
+        //     title: "Astro2Sphere",
+        //     image: Astro2Sphere,
+        //     url: "https://www.astro2sphere.com/",
+        //     buttonText: "Astro2Sphere.com"
+        // },
         {
             id: 2,
             title: "CiteTalk",
